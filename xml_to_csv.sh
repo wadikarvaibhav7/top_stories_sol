@@ -1,0 +1,1 @@
+curl https://www.europarl.europa.eu/rss/doc/top-stories/en.xml | xmlstarlet sel -t -m //rss/channel/item -v title -o "," -v link -o "," -v description -o "," -v source -o "," -v category -o "," -v pubDate -o "," -v guid -n >> top-stories.csv
